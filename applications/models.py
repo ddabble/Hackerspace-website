@@ -42,7 +42,7 @@ class Application(models.Model):
     knowledge_of_hs = models.CharField(max_length=1000, verbose_name="Hvordan fikk du vite om Hackerspace?")
 
     about = models.TextField(verbose_name="Litt om deg selv")
-    application_text = models.TextField(verbose_name="Hvorfor søker du hackerspace?")
+    application_text = models.TextField(verbose_name="Hvorfor søker du Hackerspace?")
     application_date = models.DateTimeField(default=timezone.now, blank=False)
 
     def __str__(self):
